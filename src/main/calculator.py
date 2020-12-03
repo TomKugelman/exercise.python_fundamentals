@@ -13,6 +13,4 @@ class Calculator(object):
         return a * b
 
     def divide(self, a, b):
-        if a <= 0 or b <= 0:
-            return "ZeroDivisionError"
-        return math.divide(a, b, 3)
+        return round((a / b), 3)
