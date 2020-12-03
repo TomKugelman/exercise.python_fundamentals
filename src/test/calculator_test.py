@@ -30,7 +30,7 @@ class CalculatorTest(unittest.TestCase):
 
             # then
             self.assertTrue(isinstance(actual_calculation, Number), return_type_error_message)
-            self.assertAlmostEqual(expected_calculation, actual_calculation, calculation_error_message)
+            self.assertAlmostEqual(expected_calculation, actual_calculation, msg=calculation_error_message)
 
     def test_add(self):
         self._test(Calculator().add, [
